@@ -416,7 +416,7 @@ function isDataURI(filename) {
  return filename.startsWith(dataURIPrefix);
 }
 
-var wasmBinaryFile = 'scan-barcode-webassembly/public/barcode-scanner-opt.wasm';
+var wasmBinaryFile = 'scan-barcode-wasm/public/barcode-scanner-opt.wasm';
 
 if (!isDataURI(wasmBinaryFile)) {
  wasmBinaryFile = locateFile(wasmBinaryFile);
